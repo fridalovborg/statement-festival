@@ -1,0 +1,40 @@
+{
+  "name": "sage",
+  "homepage": "https://roots.io/sage/",
+  "authors": [
+    "Ben Word <ben@benword.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "git://github.com/twbs/bootstrap.git#v4.0.0-beta",
+    "popper.js": "https://unpkg.com/popper.js"
+  },
+  "overrides": {
+    "popper.js": {
+      "main": [
+        "./index.js"
+      ]
+    },
+    "bootstrap": {
+      "main": [
+        "./scss/_functions.scss",
+        "./scss/_variables.scss",
+        "./scss/_mixins.scss",
+        "./scss/_print.scss",
+        "./scss/_reboot.scss",
+        "./scss/_type.scss",
+        "./scss/_images.scss",
+        "./scss/_code.scss",
+        "./scss/_grid.scss",
+        "./scss/_tables.scss",
+        "./scss/_forms.scss",
+        "./scss/_buttons.scss",
+        "./scss/_utilities.scss"
+      ]
+    }
+  },
+  "resolutions": {
+    "popper.js": "e-tag:W/\"13b6b-1"
+  }
+}

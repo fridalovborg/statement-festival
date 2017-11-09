@@ -1,0 +1,265 @@
+html {
+	height: 100%;
+	background-color: #954586;
+}
+body {
+	background: url('../images/background-6.png');
+	background-position: center; 
+	background-size: cover;
+	min-height: 100%;
+	background-repeat: no-repeat;
+	color: $statement-color;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4, h5, a {
+	font-family: 'HK Grotesk Bold';
+}
+p {
+	font-family: 'HK Grotesk Medium';
+	letter-spacing: 0.4px;
+    line-height: 25px;
+    font-size: 1.1em;
+    text-align: left;
+}
+date {
+	font-family: 'HK Grotesk Light Italic';
+}
+/* ------------------------------------------------------------------
+		HEADER - MAIN MENU
+------------------------------------------------------------------ */
+header.banner {
+	height: 80px;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 105;
+}
+.header-background {
+	height: 80px;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	overflow: hidden;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		z-index: 0;
+		background: #954586;
+		// background: url('../images/background-6.png');
+		// background-position: center;
+		// background-attachment: fixed;
+		// background-size: cover;
+	}
+}
+nav {
+	a {
+		font-size: 1.6em;
+		padding-bottom: 5px;
+	}
+	a:hover {
+		color: #fff800;
+	    text-decoration: none;
+	    border-bottom: 2px solid #fff800;
+	}
+	.current-menu-item a {
+		border-bottom: 2px solid #fff800;
+	}
+}
+.menu-languages {
+	width: 100%;
+	line-height: 20px;
+	padding-bottom: 130px;
+
+	ul {
+		list-style-type: none;
+		display: inline-block;
+
+		li {
+			display: inline-block;
+			font-size: 2em;
+			margin: 10px;
+		}
+	}
+}
+.menu-languages-desktop {
+	display: none;
+}
+.current-lang a {
+	color: lightsalmon;
+}
+/* ------------------------------------------------------------------
+		HEADER - LOGO
+------------------------------------------------------------------ */
+.brand {
+	display: inline-block;
+    position: relative;
+
+	.logo {
+		width: 200px;
+	    height: auto;
+	    margin: 20px;
+	}
+	&:hover {
+		text-decoration: none;
+	}
+}
+/* ------------------------------------------------------------------
+		HEADER - MOBILE MENU TOGGLE
+------------------------------------------------------------------ */
+body.menu-active .bars { 
+	display: none;
+}
+body.menu-active .times { 
+	display: block;
+}
+body .times {
+	display: none;
+}
+/* ------------------------------------------------------------------
+		HEADER - MOBILE MENU
+------------------------------------------------------------------ */
+.mobile-menu-toggle {
+	display: block;
+	position: fixed;	
+	left: 20px;
+    top: 20px;
+    z-index: 106;
+}
+.nav-primary {
+	display: none;
+}
+.nav-mobile {
+	position: relative;
+	padding-top: 20vh;
+	padding-bottom: 20px;
+
+	ul {
+		list-style-type: none;
+		li {
+			font-size: 1.6em;
+			margin: 10px;
+		}
+	}
+}
+.menu {
+	width: 100%;
+	min-height: 100vh;
+	position: fixed;
+	top: 0;
+	left: -100%;
+	z-index: 101;
+	overflow: scroll;
+	-webkit-owerflow-scrolling: touch;
+
+	// Gradient background color
+	background: #e69f99; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#e69f99, #e8748d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#e69f99, #e8748d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#e69f99, #e8748d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#e69f99, #e8748d); /* Standard syntax */
+}
+/* ------------------------------------------------------------------
+		PAGE
+------------------------------------------------------------------ */
+main {
+    padding-top: 120px;
+    //margin-bottom: 50px;
+
+    a:hover {
+    	text-decoration: none;
+    }
+}
+.icons img {
+
+	&:hover {
+		opacity: 0.5;
+	}
+}
+/* ------------------------------------------------------------------
+		PAGE - TITLE (h1, h2, .page-title)
+------------------------------------------------------------------ */
+.home .page-title {
+	display: none;
+}
+.page-title {
+	margin-bottom: 20px;
+}
+h2 {
+	margin-bottom: 15px;
+}
+/* ------------------------------------------------------------------
+		PAGE - ARCHIVE/ARTISTS
+------------------------------------------------------------------ */
+.artist-container {
+	position: relative;
+	display: inline-block;
+	margin: 20px 0;
+
+	.artist-title {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+}
+/* ------------------------------------------------------------------
+		PAGE - SINGLE/ARTISTS
+------------------------------------------------------------------ */
+.feature-img img {
+	margin: 0 auto;
+    display: block;
+}
+/* ------------------------------------------------------------------
+		PAGE - POSTS
+------------------------------------------------------------------ */
+article {
+	margin-bottom: 50px;
+}
+date {
+	font-style: italic;
+}
+.posts-btn {
+	border: 2px solid $statement-color;
+    border-radius: 30px;
+    font-size: 1em;
+    padding: 8px 15px;
+}
+/* ------------------------------------------------------------------
+		FOOTER
+------------------------------------------------------------------ */
+footer {
+	display: none;
+}
+.social-media-mobile {
+	width: 100%;
+	line-height: 120px;
+	text-align: center;
+	z-index: 105;
+	position: absolute;
+	bottom: 50px;
+}
+.social-media-mobile img {
+	display: inline-block;
+	width: 40px;
+}
+.social-media-mobile a {
+	display: inline-block;
+
+	&:hover {
+		text-decoration: none;
+	}
+}

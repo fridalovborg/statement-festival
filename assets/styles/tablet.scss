@@ -1,0 +1,93 @@
+/* ------------------------------------------------------------------
+		TABLET
+------------------------------------------------------------------ */
+@include media-breakpoint-up(md) {
+
+body {
+	background-attachment: fixed;
+}
+/* ------------------------------------------------------------------
+		HEADER
+------------------------------------------------------------------ */
+header.banner {
+	position: initial;
+}
+// DESKTOP MENU
+.nav-primary {
+	display: block;
+
+	ul {
+		padding-left: 0;
+		li {
+			display: inline-block;
+			width: 100px;
+			margin: 0 20px;
+		}
+	}
+}
+.menu-languages-desktop {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: block;
+
+	ul {
+		list-style-type: none;
+		display: inline-block;
+
+		li {
+			display: inline-block;
+		}
+	}
+}
+// MOBILE MENU
+.menu, .mobile-menu-toggle {
+	display: none;
+}
+// LOGO
+.brand .logo {
+	width: 400px;
+}
+
+.header-background {
+	display: none;
+}
+.brand .logo {
+	width: 300px;
+}
+/* ------------------------------------------------------------------
+			PAGE
+------------------------------------------------------------------ */
+.page-title {
+	display: none;
+}
+main {
+    padding-top: 150px;
+}
+/* ------------------------------------------------------------------
+		FOOTER
+------------------------------------------------------------------ */
+footer {
+	display: block;
+	width: 100%;
+	line-height: 70px;
+	text-align: center;
+
+	img {
+		display: inline-block;
+	}
+	a {
+		display: inline-block;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	p {
+		display: block;
+		margin: 0;
+		padding: 0 15px 15px 15px;
+		text-align: center;
+	}
+}
+}

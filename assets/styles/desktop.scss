@@ -1,0 +1,37 @@
+/* ------------------------------------------------------------------
+		DESKTOP
+------------------------------------------------------------------ */
+@include media-breakpoint-up(lg) {
+
+body {
+	background-attachment: fixed;
+}
+/* ------------------------------------------------------------------
+			HEADER
+------------------------------------------------------------------ */
+	header.banner {
+		position: initial;
+	}
+	// DESKTOP MENU
+	.nav-primary {
+		display: block;
+
+		ul {
+			padding-left: 0;
+			li {
+				display: inline-block;
+				width: 100px;
+				margin: 0 20px;
+			}
+		}
+	}
+	// MOBILE MENU
+	.menu, .mobile-menu-toggle {
+		display: none;
+	}
+	// LOGO
+	.brand .logo {
+		width: 400px;
+	}
+
+}
