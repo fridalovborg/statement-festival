@@ -7,6 +7,7 @@
                 </a>
             </div>
             <div class="col-12">
+            <h5 class="festival-dates">31 Aug-1 Sep 2018</h5>
                 <nav class="nav-primary">
                     <?php
                     if (has_nav_menu('primary_navigation')) :

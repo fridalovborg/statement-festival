@@ -127,6 +127,13 @@ body.menu-active .times {
 body .times {
 	display: none;
 }
+// Dates
+body.menu-active .festival-dates {
+	display: block;
+}
+.festival-dates {
+	display: none;
+}
 /* ------------------------------------------------------------------
 		HEADER - MOBILE MENU
 ------------------------------------------------------------------ */
