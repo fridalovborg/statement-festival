@@ -17,10 +17,10 @@ header.banner {
 	display: block;
 
 	ul {
-		padding-left: 0;
+		display: table;
+		margin: 0 auto;
 		li {
 			display: inline-block;
-			width: 100px;
 			margin: 0 20px;
 		}
 	}

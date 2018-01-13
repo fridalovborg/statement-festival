@@ -85,6 +85,8 @@ nav {
 	ul {
 		list-style-type: none;
 		display: inline-block;
+		padding: 0;
+		text-align: center;
 
 		li {
 			display: inline-block;
@@ -155,6 +157,9 @@ body.menu-active .festival-dates {
 
 	ul {
 		list-style-type: none;
+		display: block;
+		text-align: center;
+
 		li {
 			font-size: 1.6em;
 			margin: 10px;
