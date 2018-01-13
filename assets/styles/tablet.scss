@@ -71,7 +71,16 @@ header.banner {
 	display: none;
 }
 main {
-    padding-top: 170px;
+    padding-top: 240px;
+}
+
+.artist-social-media {
+	text-align: left;
+    padding: 0;
+
+    a {
+    	margin: 0;
+    }
 }
 /* ------------------------------------------------------------------
 		FOOTER
@@ -81,6 +90,8 @@ footer {
 	width: 100%;
 	line-height: 70px;
 	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
 
 	img {
 		display: inline-block;

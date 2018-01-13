@@ -4,6 +4,10 @@
 * The archive page for artists
 **/
 ?>
+<?php 
+$query = new WP_Query( array( 'post_type' => 'artist' ) );
+$query->set( 'posts_per_page', '-1' );
+?>
 <div class="container">
 	<div class="row">
 		<?php while (have_posts()) : the_post(); ?>
