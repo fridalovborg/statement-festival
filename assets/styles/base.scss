@@ -23,6 +23,11 @@ p {
     font-size: 1.1em;
     text-align: left;
 }
+.italic {
+	font-family: 'HK Grotesk Light Italic';
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 date {
 	font-family: 'HK Grotesk Light Italic';
 }
@@ -232,9 +237,13 @@ h2 {
 /* ------------------------------------------------------------------
 		PAGE - SINGLE/ARTISTS
 ------------------------------------------------------------------ */
-.feature-img img {
-	margin: 0 auto;
-    display: block;
+.feature-img {
+	width: 100%;
+	padding-top: 100%;
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: 50px;
 }
 .artist-social-media {
 	text-align: center;
