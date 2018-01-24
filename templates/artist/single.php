@@ -16,8 +16,12 @@
 			<!-- FEATURE IMAGE -->
 			<div class="feature-img" style="background-image: url('<?php echo get_the_post_thumbnail_url( null, 'large' ); ?>"></div>
 			
-			<?php if( get_field('photograph') ): ?>
-				<p class="italic">Photo: <?php the_field('photograph'); ?></p>			
+			<?php if( get_field('photograph-en') ): ?>
+				<p class="italic">Photo: <?php the_field('photograph-en'); ?></p>			
+			<?php endif; ?>photograph-sv
+
+			<?php if( get_field('photograph-sv') ): ?>
+				<p class="italic">Foto: <?php the_field('photograph-sv'); ?></p>			
 			<?php endif; ?>
 		</div>
 	</div>
