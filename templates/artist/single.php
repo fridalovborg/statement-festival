@@ -18,7 +18,7 @@
 			
 			<?php if( get_field('photograph-en') ): ?>
 				<p class="italic">Photo: <?php the_field('photograph-en'); ?></p>			
-			<?php endif; ?>photograph-sv
+			<?php endif; ?>
 
 			<?php if( get_field('photograph-sv') ): ?>
 				<p class="italic">Foto: <?php the_field('photograph-sv'); ?></p>			
