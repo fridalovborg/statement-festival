@@ -20,12 +20,14 @@
 
 	// cookie notification
 	if(localStorage.getItem('notificationShown') === 'false') {
+		console.log('1');
 		// display cookie message
 		$( '.cookie' ).click(function() {
 			localStorage.setItem('notificationShown', true);
 			$( '.cookie-note' ).fadeOut();
 		});
 	} else {
+		console.log('2');
 		$( '.cookie-note' ).hide();
 	}
 
