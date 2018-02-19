@@ -106,6 +106,29 @@ nav {
 .current-lang a {
 	color: lightsalmon;
 }
+/* cookie notification */
+.cookie-note {
+	width: 100%;
+	height: auto;
+	background-color: #954586;
+	position: fixed;
+	bottom: 0;
+	z-index: 100;
+
+	p {
+		text-align: center;
+		padding: 20px;
+		margin: 0;
+		line-height: 36px;
+		
+		a:hover {
+			text-decoration: none;
+		}
+	}
+}
+body.cookie-gone .cookie-note {
+	display: none;
+}
 /* ------------------------------------------------------------------
 		HEADER - LOGO
 ------------------------------------------------------------------ */

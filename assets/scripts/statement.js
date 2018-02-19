@@ -17,4 +17,16 @@
 			}, 500);
 		}
 	});
+
+	// cookie notification
+	if(localStorage.getItem('notificationShown') === 'false') {
+		// display cookie message
+		$( '.cookie' ).click(function() {
+			localStorage.setItem('notificationShown', true);
+			$( '.cookie-note' ).fadeOut();
+		});
+	} else {
+		$( '.cookie-note' ).hide();
+	}
+
 })(jQuery);
