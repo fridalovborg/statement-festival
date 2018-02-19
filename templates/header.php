@@ -1,11 +1,3 @@
-<div class="cookie-note">
-    <?php if (pll_current_language() == 'sv') : ?>
-        <p>Statement festival använder cookies för statisktik och analys för att optimera din webbplatsupplevelse. <a href="#" class="posts-btn cookie">Ok!</a></p>
-    <?php endif; ?>
-    <?php if (pll_current_language() == 'en') : ?>
-        <p>Statement festial uses cookies for statistics and analysis to optimize your site experience. <a href="#" class="posts-btn cookie">Ok!</a></p>
-    <?php endif ?>
-</div>
 <header class="banner">
     <div class="container">
         <div class="row">

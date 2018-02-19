@@ -107,27 +107,16 @@ nav {
 	color: lightsalmon;
 }
 /* cookie notification */
-.cookie-note {
-	width: 100%;
-	height: auto;
+#cookieChoiceInfo {
 	background-color: #954586;
-	position: fixed;
-	bottom: 0;
-	z-index: 100;
+	opacity: 1;
 
-	p {
-		text-align: center;
-		padding: 20px;
-		margin: 0;
-		line-height: 36px;
-		
-		a:hover {
-			text-decoration: none;
-		}
+	div span {
+		line-height: 40px;
 	}
 }
-body.cookie-gone .cookie-note {
-	display: none;
+#cookieChoiceDismissIcon {
+	display: none !important;
 }
 /* ------------------------------------------------------------------
 		HEADER - LOGO
